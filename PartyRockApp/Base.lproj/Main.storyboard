@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -154,14 +154,29 @@
                                     <constraint firstAttribute="height" constant="219" id="nqd-TO-6h9"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKG-Qb-Ctb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ekC-JE-80p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="YKG-Qb-Ctb" secondAttribute="trailing" constant="5" id="C5A-FH-vdU"/>
                             <constraint firstItem="trZ-iY-gBp" firstAttribute="top" secondItem="zUJ-xJ-AmP" secondAttribute="top" id="YQ6-L1-vsS"/>
+                            <constraint firstItem="YKG-Qb-Ctb" firstAttribute="top" secondItem="trZ-iY-gBp" secondAttribute="bottom" constant="50" id="aPy-Mn-Uru"/>
+                            <constraint firstItem="YKG-Qb-Ctb" firstAttribute="leading" secondItem="zUJ-xJ-AmP" secondAttribute="leadingMargin" constant="5" id="rfk-gh-n2b"/>
                             <constraint firstAttribute="trailing" secondItem="trZ-iY-gBp" secondAttribute="trailing" id="yLI-Rr-jBN"/>
                             <constraint firstItem="trZ-iY-gBp" firstAttribute="leading" secondItem="zUJ-xJ-AmP" secondAttribute="leading" id="z2c-bG-Dvx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titelLbl" destination="YKG-Qb-Ctb" id="a98-k7-mxb"/>
+                        <outlet property="webView" destination="trZ-iY-gBp" id="kKK-2q-alS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gV-Zf-Q9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
